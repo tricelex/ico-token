@@ -78,7 +78,7 @@ export default function Home() {
     }
   };
 
-  const mintCryptoDevToken = async () => {
+  const mintCryptoDevToken = async (amount) => {
     try {
       const signer = await getProviderOrSigner(true);
       const tokenContract = new Contract(
@@ -88,7 +88,7 @@ export default function Home() {
       );
 
       const value = 0.001 * amount;
-      const tx = await tokenContract.mint(value, {
+      const tx = await tokenContract.mint(amount, {
         value: utils.parseEther(value.toString()),
       });
       setLoading(true);
