@@ -78,7 +78,7 @@ export default function Home() {
     }
   };
 
-  const mintCryptoDevsTokens = async () => {
+  const mintCryptoDevToken = async () => {
     try {
       const signer = await getProviderOrSigner(true);
       const tokenContract = new Contract(
@@ -104,7 +104,7 @@ export default function Home() {
     }
   };
 
-  const claimCryptoDevsTokens = async () => {
+  const claimCryptoDevTokens = async () => {
     try {
       const signer = await getProviderOrSigner(true);
       const tokenContract = new Contract(
