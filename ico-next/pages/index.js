@@ -10,6 +10,7 @@ import {
   TOKEN_CONTRACT_ADDRESS,
 } from "../constants/index.ts";
 import styles from "../styles/Home.module.css";
+import cdevs from "../public/cryptodevs/0.svg";
 
 export default function Home() {
   const zero = BigNumber.from(0);
@@ -265,7 +266,7 @@ export default function Home() {
           )}
         </div>
         <div>
-          <img className={styles.image} src="./0.svg" />
+         <Image className={styles.image} alt="text" src={cdevs} />
         </div>
       </div>
 
