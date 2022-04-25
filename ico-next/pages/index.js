@@ -8,7 +8,7 @@ import {
   NFT_CONTRACT_ADDRESS,
   TOKEN_CONTRACT_ABI,
   TOKEN_CONTRACT_ADDRESS,
-} from "../constants/index.ts";
+} from "../ico/index.ts";
 import styles from "../styles/Home.module.css";
 import cdevs from "../public/cryptodevs/0.svg";
 
